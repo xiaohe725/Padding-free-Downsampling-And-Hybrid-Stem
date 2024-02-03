@@ -6,7 +6,7 @@ ZEISS Microscopy  &nbsp; ZEISS Microscopy
 
 Following the hyperparameter settings of Haase et al, the padding-free downsampling and hybrid stem modules proposed in this article were experimented on CIFAR-100, Stanford Dogs, and ImageNet datasets.
 
-For the CIFAR-100 dataset, using the first set of hyperparameters.
+For the CIFAR-100 dataset, using the first set of hyperparameters
 --
 
 ## Orig——CIFAR-100
@@ -31,7 +31,7 @@ For the CIFAR-100 dataset, using the first set of hyperparameters.
 
 <br>
 
-For the CIFAR-100 dataset, using the second set of hyperparameters.
+For the CIFAR-100 dataset, using the second set of hyperparameters
 --
 ## Orig——CIFAR-100
 | Model | Parameters | FLOPs |  Accuracy |
@@ -51,7 +51,7 @@ For the CIFAR-100 dataset, using the second set of hyperparameters.
 
 <br>
 
-For Stanford Dogs dataset.
+For Stanford Dogs dataset
 --
 
 ## Orig——Stanford Dogs
@@ -68,7 +68,7 @@ For Stanford Dogs dataset.
 
 <br>
 
-For ImageNet dataset.
+For ImageNet dataset
 --
 
 ## Orig——ImageNet
@@ -111,3 +111,23 @@ Ablation Experiments
 | Parc-MobileNet-v2 | 76.2%  | 76.6% |  76.4% | 76.6%↑ |  
 | GhostNet | 76.0%  | 74.2% |  73.8% | 74.1%↑ |  
 | ShuffleNet-v2 | 70.9% | 72.0% | 70.4% | 71.5%↑ |  
+
+<br>
+
+Comparison with other downsampling (EfficientFormerv2)
+--
+## EfficientFormerv2-Downsampling——CIFAR-100
+| Model | Parameters | FLOPs |  Accuracy |
+| :---: | :---: | :---: | :---: |   
+| MobileNetv3-large | 4.317M | 78.0M | 75.80% |  
+| Parc-MobileNet-v2 | 2.558M | 97.5M |  75.70% |  
+| GhostNet | 4.092M | 58.3M |  74.30% |  
+| ShuffleNet-v2 | 2.804M | 84.1M |  70.60% | 
+
+## Ours——CIFAR-100
+| Model | Parameters | FLOPs |  Accuracy |
+| :---: | :---: | :---: | :---: |   
+| MobileNetv3-large | 4.331M | 54.7M |  76.60% |  
+| Parc-MobileNet-v2 | 2.348M | 73.0M |  76.60% |  
+| GhostNet | 4.030M | 34.8M |  74.10% |  
+| ShuffleNet-v2 | 1.358M | 35.7M |  71.50% | 
