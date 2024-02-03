@@ -156,3 +156,13 @@ Snap Inc. Northeastern University
 | Parc-MobileNet-v2 | 2.348M | 73.0M |  76.60% |  
 | GhostNet | 4.030M | 34.8M |  74.10% |  
 | ShuffleNet-v2 | 1.358M | 35.7M |  71.50% | 
+
+Getting started
+--
+
+* For the BSConv folder, when using it for the first time, use "--download" to download the dataset.
+* "--data-root" is the dataset path, "--dataset" is the dataset name, "--architecture" is the model name.
+```python  
+python bsconv_pytorch_train.py --data-root cifar100 --dataset cifar100 --architecture cifar_mobilenetv3_large_w1_bsconvs_p1d6 --download --gpu-id 0 
+```
+
