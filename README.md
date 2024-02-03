@@ -162,7 +162,12 @@ Getting started
 
 * For the BSConv folder, when using it for the first time, use "--download" to download the dataset.
 * "--data-root" is the dataset path, "--dataset" is the dataset name, "--architecture" is the model name.
-```python  
-python bsconv_pytorch_train.py --data-root cifar100 --dataset cifar100 --architecture cifar_mobilenetv3_large_w1_bsconvs_p1d6 --download --gpu-id 0 
+```python
+python bsconv_pytorch_train.py --data-root cifar100 --dataset cifar100 --architecture cifar_mobilenetv3_large_w1 --download --gpu-id 0
+python bsconv_pytorch_train.py --data-root cifar100 --dataset cifar100 --architecture cifar_mobilenetv3_large_w1_bsconvs_p1d6 --gpu-id 0
+python bsconv_pytorch_train.py --data-root cifar100 --dataset cifar100 --architecture cifar_wrn40_3 --gpu-id 0
+python bsconv_pytorch_train.py --data-root cifar100 --dataset cifar100 --architecture cifar_wrn40_8_bsconvu --gpu-id 0
+python bsconv_pytorch_train.py --data-root cifar100 --dataset cifar100 --architecture cifar_resnet20 --gpu-id 0
+python bsconv_pytorch_train.py --data-root cifar100 --dataset cifar100 --architecture cifar_resnet110_bsconvu --gpu-id 0 
 ```
 
