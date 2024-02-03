@@ -100,3 +100,14 @@ Inference Latency
 | Parc-MobileNet-v2 | 9.3ms | 34.0ms ↓|
 | GhostNet | 11.7ms | 26.8ms ↓|
 | ShuffleNet-v2 | 7.4ms | 18.8ms ↓|
+
+<br>
+
+Ablation Experiments
+--
+| Model | orig | +Stem |  +Downsampling | ours |
+| :---: | :---: | :---: | :---: | :---: |   
+| MobileNetv3-large | 76.0%  | 75.9% |  76.4% | 76.6%↑ |  
+| Parc-MobileNet-v2 | 76.2%  | 76.6% |  76.4% | 76.6%↑ |  
+| GhostNet | 76.0%  | 74.2% |  73.8% | 74.1%↑ |  
+| ShuffleNet-v2 | 70.9% | 72.0% | 70.4% | 71.5%↑ |  
