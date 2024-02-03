@@ -28,3 +28,21 @@ Following the hyperparameter settings of Haase et al, the padding-free downsampl
 | ResNet-110(BSConv-U) | 0.249M | 38.6M ↓|  71.62% |  
 | WideResNet-40-3 | 5.287M | 668.7M ↓|  76.28% |  
 | WideResNet-40-8(BSConv-U) | 4.457M | 615.6M ↓|  78.05% |  
+
+Experimental results on lightweight models using the second set of hyperparameters.
+--
+## Orig
+| Model | Parameters | FLOPs |  Accuracy |
+| :---: | :---: | :---: | :---: |   
+| MobileNetv3-large | 4.330M | 68.8M |  76.00% |  
+| Parc-MobileNet-v2 | 2.348M | 91.3M |  76.20% |  
+| GhostNet | 4.029M | 44.6M |  74.00% |  
+| ShuffleNet-v2 | 1.356M | 46.2M |  70.90% |  
+
+## Ours
+| Model | Parameters | FLOPs |  Accuracy |
+| :---: | :---: | :---: | :---: |   
+| MobileNetv3-large | 4.331M | 54.7M ↓|  76.60% |  
+| Parc-MobileNet-v2 | 2.348M | 73.0M ↓|  76.60% |  
+| GhostNet | 4.030M | 34.8M ↓|  74.10% |  
+| ShuffleNet-v2 | 1.358M | 35.7M ↓|  71.50% |  
