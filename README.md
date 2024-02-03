@@ -29,6 +29,8 @@ For the CIFAR-100 dataset, using the first set of hyperparameters.
 | WideResNet-40-3 | 5.287M | 668.7M ↓|  76.28% |  
 | WideResNet-40-8(BSConv-U) | 4.457M | 615.6M ↓|  78.05% |  
 
+<br>
+
 For the CIFAR-100 dataset, using the second set of hyperparameters.
 --
 ## Orig——CIFAR-100
@@ -47,6 +49,8 @@ For the CIFAR-100 dataset, using the second set of hyperparameters.
 | GhostNet | 4.030M | 34.8M ↓|  74.10% |  
 | ShuffleNet-v2 | 1.358M | 35.7M ↓|  71.50% |  
 
+<br>
+
 For Stanford Dogs dataset.
 --
 
@@ -61,6 +65,8 @@ For Stanford Dogs dataset.
 | :---: | :---: | :---: | :---: |   
 | MobileNetv3-large | 3.087M | 212.6M ↓|  54.11% |  
 | MobileNetv3-large-bsconvs | 3.087M | 212.6M ↓|  60.79% |  
+
+<br>
 
 For ImageNet dataset.
 --
