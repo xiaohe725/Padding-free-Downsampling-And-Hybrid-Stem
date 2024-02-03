@@ -1,0 +1,8 @@
+# development files/dirs
+__pycache__/
+*.swp
+
+# build dirs for wheel
+bsconv.egg-info/
+build/
+dist/
