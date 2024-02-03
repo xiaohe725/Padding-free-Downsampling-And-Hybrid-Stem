@@ -9,7 +9,7 @@ ZEISS Microscopy  &nbsp; ZEISS Microscopy
 
 Following the hyperparameter settings of Haase et al, the padding-free downsampling and hybrid stem modules proposed in this article were experimented on CIFAR-100, Stanford Dogs, and ImageNet datasets.
 
-## Orig
+## Orig——CIFAR-100
 | Model | Parameters | FLOPs |  Accuracy |
 | :---: | :---: | :---: | :---: |   
 | MobileNetv3-large | 3.066M | 68.5M |  75.37% |  
@@ -19,7 +19,7 @@ Following the hyperparameter settings of Haase et al, the padding-free downsampl
 | WideResNet-40-3 | 5.056M | 735.8M |  76.23% |  
 | WideResNet-40-8(BSConv-U) | 4.286M | 675.1M |  77.79% |  
 
-## Ours
+## Ours——CIFAR-100
 | Model | Parameters | FLOPs |  Accuracy |
 | :---: | :---: | :---: | :---: |   
 | MobileNetv3-large | 3.067M | 54.6M ↓|  75.71% |  
@@ -31,7 +31,7 @@ Following the hyperparameter settings of Haase et al, the padding-free downsampl
 
 Experimental results on lightweight models using the second set of hyperparameters.
 --
-## Orig
+## Orig——CIFAR-100
 | Model | Parameters | FLOPs |  Accuracy |
 | :---: | :---: | :---: | :---: |   
 | MobileNetv3-large | 4.330M | 68.8M |  76.00% |  
@@ -39,7 +39,7 @@ Experimental results on lightweight models using the second set of hyperparamete
 | GhostNet | 4.029M | 44.6M |  74.00% |  
 | ShuffleNet-v2 | 1.356M | 46.2M |  70.90% |  
 
-## Ours
+## Ours——CIFAR-100
 | Model | Parameters | FLOPs |  Accuracy |
 | :---: | :---: | :---: | :---: |   
 | MobileNetv3-large | 4.331M | 54.7M ↓|  76.60% |  
