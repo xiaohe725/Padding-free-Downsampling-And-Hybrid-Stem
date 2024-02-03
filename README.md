@@ -6,7 +6,7 @@ ZEISS Microscopy  &nbsp; ZEISS Microscopy
 
 Following the hyperparameter settings of Haase et al, the padding-free downsampling and hybrid stem modules proposed in this article were experimented on CIFAR-100, Stanford Dogs, and ImageNet datasets.
 
-For the CIFAR-100 dataset, the first set of hyperparameters is used.
+For the CIFAR-100 dataset, using the first set of hyperparameters.
 --
 
 ## Orig——CIFAR-100
@@ -29,7 +29,7 @@ For the CIFAR-100 dataset, the first set of hyperparameters is used.
 | WideResNet-40-3 | 5.287M | 668.7M ↓|  76.28% |  
 | WideResNet-40-8(BSConv-U) | 4.457M | 615.6M ↓|  78.05% |  
 
-For the CIFAR-100 dataset, using the second set of hyperparameters, experimental results on lightweight models.
+For the CIFAR-100 dataset, using the second set of hyperparameters.
 --
 ## Orig——CIFAR-100
 | Model | Parameters | FLOPs |  Accuracy |
@@ -49,3 +49,17 @@ For the CIFAR-100 dataset, using the second set of hyperparameters, experimental
 
 For ImageNet and Stanford Dogs datasets.
 --
+
+## Orig——Stanford Dogs
+| Model | Parameters | FLOPs |  Accuracy |
+| :---: | :---: | :---: | :---: |   
+| MobileNetv3-large | 3.086M | 230.1M |  51.07% |  
+| MobileNetv3-large-bsconvs | 3.086M | 230.1M |  59.68% |  
+
+## Ours——Stanford Dogs
+| Model | Parameters | FLOPs |  Accuracy |
+| :---: | :---: | :---: | :---: |   
+| MobileNetv3-large | 3.087M | 212.6M ↓|  54.11% |  
+| MobileNetv3-large-bsconvs | 3.087M | 212.6M ↓|  60.79% |  
+
+
