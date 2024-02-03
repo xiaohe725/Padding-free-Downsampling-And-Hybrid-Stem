@@ -47,7 +47,7 @@ For the CIFAR-100 dataset, using the second set of hyperparameters.
 | GhostNet | 4.030M | 34.8M ↓|  74.10% |  
 | ShuffleNet-v2 | 1.358M | 35.7M ↓|  71.50% |  
 
-For ImageNet and Stanford Dogs datasets.
+For Stanford Dogs dataset.
 --
 
 ## Orig——Stanford Dogs
@@ -62,4 +62,16 @@ For ImageNet and Stanford Dogs datasets.
 | MobileNetv3-large | 3.087M | 212.6M ↓|  54.11% |  
 | MobileNetv3-large-bsconvs | 3.087M | 212.6M ↓|  60.79% |  
 
+For ImageNet dataset.
+--
+
+## Orig——ImageNet
+| Model | Parameters | FLOPs |  Accuracy |
+| :---: | :---: | :---: | :---: |   
+| MobileNetv3-large | 5.480M | 232.5M |  69.50% |  
+
+## Ours——ImageNet
+| Model | Parameters | FLOPs |  Accuracy |
+| :---: | :---: | :---: | :---: |   
+| MobileNetv3-large | 5.481M | 214.9M ↓|  69.50% |  
 
