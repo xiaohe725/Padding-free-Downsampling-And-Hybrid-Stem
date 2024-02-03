@@ -1,13 +1,13 @@
 This repository provides code for paper 《Lightweight Deep Neural Network Model With Padding-free Downsampling》
 
-Experiments with BSConv
---
 __《Rethinking Depthwise Separable Convolutions: How Intra-Kernel Correlations Lead to Improved MobileNets》<br>__
 Daniel Haase∗ &nbsp; Manuel Amthor∗ <br>
 ZEISS Microscopy  &nbsp; ZEISS Microscopy
 
-
 Following the hyperparameter settings of Haase et al, the padding-free downsampling and hybrid stem modules proposed in this article were experimented on CIFAR-100, Stanford Dogs, and ImageNet datasets.
+
+For the CIFAR-100 dataset, the first set of hyperparameters is used.
+--
 
 ## Orig——CIFAR-100
 | Model | Parameters | FLOPs |  Accuracy |
@@ -29,7 +29,7 @@ Following the hyperparameter settings of Haase et al, the padding-free downsampl
 | WideResNet-40-3 | 5.287M | 668.7M ↓|  76.28% |  
 | WideResNet-40-8(BSConv-U) | 4.457M | 615.6M ↓|  78.05% |  
 
-Experimental results on lightweight models using the second set of hyperparameters.
+For the CIFAR-100 dataset, using the second set of hyperparameters, experimental results on lightweight models.
 --
 ## Orig——CIFAR-100
 | Model | Parameters | FLOPs |  Accuracy |
@@ -46,3 +46,6 @@ Experimental results on lightweight models using the second set of hyperparamete
 | Parc-MobileNet-v2 | 2.348M | 73.0M ↓|  76.60% |  
 | GhostNet | 4.030M | 34.8M ↓|  74.10% |  
 | ShuffleNet-v2 | 1.358M | 35.7M ↓|  71.50% |  
+
+For ImageNet and Stanford Dogs datasets.
+--
