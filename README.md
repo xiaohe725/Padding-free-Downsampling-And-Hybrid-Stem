@@ -1,13 +1,14 @@
 This repository provides code for paper 《Lightweight Deep Neural Network Model With Padding-free Downsampling》
 
-__《Rethinking Depthwise Separable Convolutions: How Intra-Kernel Correlations Lead to Improved MobileNets》<br>__
-Daniel Haase∗ &nbsp; Manuel Amthor∗ <br>
-ZEISS Microscopy  &nbsp; ZEISS Microscopy
-
-Following the hyperparameter settings of Haase et al, the padding-free downsampling and hybrid stem modules proposed in this article were experimented on CIFAR-100, Stanford Dogs, and ImageNet datasets.
 
 For the CIFAR-100 dataset, using the first set of hyperparameters
 --
+The first set of hyperparameters follows the settings of Haase et al. 
+<br>
+
+__《Rethinking Depthwise Separable Convolutions: How Intra-Kernel Correlations Lead to Improved MobileNets》<br>__
+Daniel Haase∗ &nbsp; Manuel Amthor∗ <br>
+ZEISS Microscopy  &nbsp; ZEISS Microscopy
 
 ## Orig——CIFAR-100
 | Model | Parameters | FLOPs |  Accuracy |
@@ -123,7 +124,7 @@ Inference Latency
 
 <br>
 
-Ablation Experiments
+Ablation Experiments on CIFAR-100
 --
 | Model | orig | +Stem |  +Downsampling | ours |
 | :---: | :---: | :---: | :---: | :---: |   
@@ -136,6 +137,10 @@ Ablation Experiments
 
 Comparison with other downsampling (EfficientFormerv2)
 --
+__《Rethinking Vision Transformers for MobileNet Size and Speed》<br>__
+Yanyu Li <br>
+Snap Inc. Northeastern University 
+
 ## EfficientFormerv2-Downsampling——CIFAR-100
 | Model | Parameters | FLOPs |  Accuracy |
 | :---: | :---: | :---: | :---: |   
