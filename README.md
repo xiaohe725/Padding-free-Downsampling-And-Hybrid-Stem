@@ -81,3 +81,22 @@ For ImageNet dataset.
 | :---: | :---: | :---: | :---: |   
 | MobileNetv3-large | 5.481M | 214.9M ↓|  69.50% |  
 
+<br>
+
+Inference Latency
+--
+## Orig——Latency
+| Model | AMD Ryzen 5 5600H | MediaTek Tiangui 1000+ |
+| :---: | :---: | :---: | 
+| MobileNetv3-large | 8.5ms | 27.0ms |
+| Parc-MobileNet-v2 | 8.7ms | 37.4ms |
+| GhostNet | 11.4ms | 36.6ms |
+| ShuffleNet-v2 | 6.2ms | 19.4ms |
+
+## Ours——Latency
+| Model | AMD Ryzen 5 5600H | MediaTek Tiangui 1000+ |
+| :---: | :---: | :---: | 
+| MobileNetv3-large | 9.0ms | 26.3ms ↓|
+| Parc-MobileNet-v2 | 9.3ms | 34.0ms ↓|
+| GhostNet | 11.7ms | 26.8ms ↓|
+| ShuffleNet-v2 | 7.4ms | 18.8ms ↓|
