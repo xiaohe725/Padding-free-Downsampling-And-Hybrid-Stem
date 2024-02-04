@@ -175,4 +175,44 @@ python bsconv_pytorch_train.py --data-root cifar100 --dataset cifar100 --archite
 python bsconv_pytorch_train.py --data-root cifar100 --dataset cifar100 --architecture cifar_resnet20 --gpu-id 0
 python bsconv_pytorch_train.py --data-root cifar100 --dataset cifar100 --architecture cifar_resnet110_bsconvu --gpu-id 0 
 ```
-* For the BSConv folder, when using it for the first time, use "--download" to download the dataset.
+Take MobileNetv3 as an example, when using our module.
+--
+
+* Replace init_conv on line 321 in the mobilenet.py file with our stem layer.
+```python
+self.backbone.add_module("init_conv", StemBlock(in_channels, init_conv_channels))
+```
+* Uncomment the if stride==2 on lines 157, 168, 237, and 261 in the common.py file.
+```python
+        if stride == 2:
+          self.maxx = nn.MaxPool2d(kernel_size=3, stride=2,padding=0)
+```
+```python
+        if self.stride == 2:
+          b = self.maxx(b)
+          return x + b
+```
+```python
+    if stride ==2:
+          return ConvBlock(
+             in_channels=channels,
+             out_channels=channels,
+             kernel_size=3,
+             stride=stride,
+             padding=0,
+             groups=channels,
+             use_bn=use_bn,
+             activation=activation)
+```
+```python
+    if stride ==2 :
+        return ConvBlock(
+             in_channels=channels,
+             out_channels=channels,
+             kernel_size=5,
+             stride=stride,
+             padding=1,
+             groups=channels,
+             use_bn=use_bn,
+             activation=activation)
+```
