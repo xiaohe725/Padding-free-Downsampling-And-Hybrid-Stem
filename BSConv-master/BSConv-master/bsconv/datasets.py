@@ -6,7 +6,7 @@ import torchvision.datasets.folder
 import torchvision.datasets.utils
 import torch
 
-class StanfordDogs(torch.utils.data.Dataset):
+class StanfordDogs(torchvision.datasets.VisionDataset):
     """
     Dataset class for the StanfordDogs (aka ImageNetDogs) dataset
     (http://vision.stanford.edu/aditya86/ImageNetDogs/).
