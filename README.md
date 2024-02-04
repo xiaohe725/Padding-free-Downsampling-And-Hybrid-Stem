@@ -1,6 +1,8 @@
 This repository provides code for paper 《Lightweight Deep Neural Network Model With Padding-free Downsampling》
 
+[Jump to My Heading](#my-heading)
 
+<a name="my-heading"></a>
 ## For the CIFAR-100 dataset, using the first set of hyperparameters
 
 The first set of hyperparameters follows the settings of Haase et al. 
