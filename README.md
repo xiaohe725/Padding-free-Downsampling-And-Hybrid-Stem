@@ -216,3 +216,7 @@ self.backbone.add_module("init_conv", StemBlock(in_channels, init_conv_channels)
              use_bn=use_bn,
              activation=activation)
 ```
+
+Acknowledgement
+--
+Thanks to BSConv and EfficientFormerv2. Our code is based on the [BSConv library](https://github.com/zeiss-microscopy/BSConv) and [EfficientFormerv2 library](https://github.com/snap-research/EfficientFormer).
