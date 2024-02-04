@@ -1,8 +1,8 @@
 This repository provides code for paper 《Lightweight Deep Neural Network Model With Padding-free Downsampling》
 
-[aaa](Ours——Stanford Dogs)
-For the CIFAR-100 dataset, using the first set of hyperparameters
---
+
+## For the CIFAR-100 dataset, using the first set of hyperparameters
+
 The first set of hyperparameters follows the settings of Haase et al. 
 <br>
 
@@ -10,7 +10,7 @@ __《Rethinking Depthwise Separable Convolutions: How Intra-Kernel Correlations 
 Daniel Haase∗ &nbsp; Manuel Amthor∗ <br>
 ZEISS Microscopy  &nbsp; ZEISS Microscopy
 
-## Orig——CIFAR-100
+### Orig——CIFAR-100
 | Model | Parameters | FLOPs |  Accuracy |
 | :---: | :---: | :---: | :---: |   
 | MobileNetv3-large | 3.066M | 68.5M |  75.37% |  
@@ -20,7 +20,7 @@ ZEISS Microscopy  &nbsp; ZEISS Microscopy
 | WideResNet-40-3 | 5.056M | 735.8M |  76.23% |  
 | WideResNet-40-8(BSConv-U) | 4.286M | 675.1M |  77.79% |  
 
-## Ours——CIFAR-100
+### Ours——CIFAR-100
 | Model | Parameters | FLOPs |  Accuracy |
 | :---: | :---: | :---: | :---: |   
 | MobileNetv3-large | 3.067M | 54.6M ↓|  75.71% |  
@@ -32,9 +32,9 @@ ZEISS Microscopy  &nbsp; ZEISS Microscopy
 
 <br>
 
-For the CIFAR-100 dataset, using the second set of hyperparameters
---
-## Orig——CIFAR-100
+## For the CIFAR-100 dataset, using the second set of hyperparameters
+
+### Orig——CIFAR-100
 | Model | Parameters | FLOPs |  Accuracy |
 | :---: | :---: | :---: | :---: |   
 | MobileNetv3-large | 4.330M | 68.8M |  76.00% |  
@@ -42,7 +42,7 @@ For the CIFAR-100 dataset, using the second set of hyperparameters
 | GhostNet | 4.029M | 44.6M |  74.00% |  
 | ShuffleNet-v2 | 1.356M | 46.2M |  70.90% |  
 
-## Ours——CIFAR-100
+### Ours——CIFAR-100
 | Model | Parameters | FLOPs |  Accuracy |
 | :---: | :---: | :---: | :---: |   
 | MobileNetv3-large | 4.331M | 54.7M ↓|  76.60% |  
@@ -52,16 +52,16 @@ For the CIFAR-100 dataset, using the second set of hyperparameters
 
 <br>
 
-For Stanford Dogs dataset
---
+## For Stanford Dogs dataset
 
-## Orig——Stanford Dogs
+
+### Orig——Stanford Dogs
 | Model | Parameters | FLOPs |  Accuracy |
 | :---: | :---: | :---: | :---: |   
 | MobileNetv3-large | 3.086M | 230.1M |  51.07% |  
 | MobileNetv3-large-bsconvs | 3.086M | 230.1M |  59.68% |  
 
-## Ours——Stanford Dogs
+### Ours——Stanford Dogs
 | Model | Parameters | FLOPs |  Accuracy |
 | :---: | :---: | :---: | :---: |   
 | MobileNetv3-large | 3.087M | 212.6M ↓|  54.11% |  
@@ -69,24 +69,23 @@ For Stanford Dogs dataset
 
 <br>
 
-For ImageNet dataset
---
+## For ImageNet dataset
 
-## Orig——ImageNet
+### Orig——ImageNet
 | Model | Parameters | FLOPs |  Accuracy |
 | :---: | :---: | :---: | :---: |   
 | MobileNetv3-large | 5.480M | 232.5M |  69.50% |  
 
-## Ours——ImageNet
+### Ours——ImageNet
 | Model | Parameters | FLOPs |  Accuracy |
 | :---: | :---: | :---: | :---: |   
 | MobileNetv3-large | 5.481M | 214.9M ↓|  69.50% |  
 
 <br>
 
-For VegFru-292 dataset
---
-## Orig——VegFru-292
+## For VegFru-292 dataset
+
+### Orig——VegFru-292
 | Model | Parameters | FLOPs |  Accuracy |
 | :---: | :---: | :---: | :---: |   
 | MobileNetv3-large | 4.576M | 224.5M |  89.20% |  
@@ -94,7 +93,7 @@ For VegFru-292 dataset
 | GhostNet | 4.276M | 147.9M |  89.60% |  
 | ShuffleNet-v2 | 1.553M | 148.1M |  88.40% |  
 
-## Ours——VegFru-292
+### Ours——VegFru-292
 | Model | Parameters | FLOPs |  Accuracy |
 | :---: | :---: | :---: | :---: |   
 | MobileNetv3-large | 4.577M | 205.7M ↓|  89.90% |  
@@ -104,9 +103,9 @@ For VegFru-292 dataset
 
 <br>
 
-Inference Latency
---
-## Orig——Latency
+## Inference Latency
+
+### Orig——Latency
 | Model | AMD Ryzen 5 5600H | MediaTek Tiangui 1000+ |
 | :---: | :---: | :---: | 
 | MobileNetv3-large | 8.5ms | 27.0ms |
@@ -114,7 +113,7 @@ Inference Latency
 | GhostNet | 11.4ms | 36.6ms |
 | ShuffleNet-v2 | 6.2ms | 19.4ms |
 
-## Ours——Latency
+### Ours——Latency
 | Model | AMD Ryzen 5 5600H | MediaTek Tiangui 1000+ |
 | :---: | :---: | :---: | 
 | MobileNetv3-large | 9.0ms | 26.3ms ↓|
@@ -124,8 +123,8 @@ Inference Latency
 
 <br>
 
-Ablation Experiments on CIFAR-100
---
+## Ablation Experiments on CIFAR-100
+
 | Model | orig | +Stem |  +Downsampling | ours |
 | :---: | :---: | :---: | :---: | :---: |   
 | MobileNetv3-large | 76.0%  | 75.9% |  76.4% | 76.6%↑ |  
@@ -135,13 +134,13 @@ Ablation Experiments on CIFAR-100
 
 <br>
 
-Comparison with other downsampling (EfficientFormerv2)
---
+## Comparison with other downsampling (EfficientFormerv2)
+
 __《Rethinking Vision Transformers for MobileNet Size and Speed》<br>__
 Yanyu Li <br>
 Snap Inc. Northeastern University 
 
-## EfficientFormerv2-Downsampling——CIFAR-100
+### EfficientFormerv2-Downsampling——CIFAR-100
 | Model | Parameters | FLOPs |  Accuracy |
 | :---: | :---: | :---: | :---: |   
 | MobileNetv3-large | 4.317M | 78.0M | 75.80% |  
@@ -149,7 +148,7 @@ Snap Inc. Northeastern University
 | GhostNet | 4.092M | 58.3M |  74.30% |  
 | ShuffleNet-v2 | 2.804M | 84.1M |  70.60% | 
 
-## Ours——CIFAR-100
+### Ours——CIFAR-100
 | Model | Parameters | FLOPs |  Accuracy |
 | :---: | :---: | :---: | :---: |   
 | MobileNetv3-large | 4.331M | 54.7M |  76.60% |  
@@ -157,8 +156,8 @@ Snap Inc. Northeastern University
 | GhostNet | 4.030M | 34.8M |  74.10% |  
 | ShuffleNet-v2 | 1.358M | 35.7M |  71.50% | 
 
-Getting started
---
+## Getting started
+
 
 * For the BSConv folder, when using it for the first time, use "--download" to download the dataset.
 ```python
@@ -175,8 +174,8 @@ python bsconv_pytorch_train.py --data-root cifar100 --dataset cifar100 --archite
 python bsconv_pytorch_train.py --data-root cifar100 --dataset cifar100 --architecture cifar_resnet20 --gpu-id 0
 python bsconv_pytorch_train.py --data-root cifar100 --dataset cifar100 --architecture cifar_resnet110_bsconvu --gpu-id 0 
 ```
-Take MobileNetv3 as an example, when using our module.
---
+## Take MobileNetv3 as an example, when using our module.
+
 
 * Replace init_conv on line 321 in the mobilenet.py file with our stem layer.
 ```python
@@ -217,6 +216,6 @@ self.backbone.add_module("init_conv", StemBlock(in_channels, init_conv_channels)
              activation=activation)
 ```
 
-Acknowledgement
---
+## Acknowledgement
+
 Thanks to BSConv and EfficientFormerv2. Our code is based on the [BSConv library](https://github.com/zeiss-microscopy/BSConv) and [EfficientFormerv2 library](https://github.com/snap-research/EfficientFormer).
