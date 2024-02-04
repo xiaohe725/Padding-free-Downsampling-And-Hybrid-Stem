@@ -6,6 +6,11 @@ This repository provides code for paper 《Lightweight Deep Neural Network Model
 [For ImageNet dataset](#ImageNet) <br>
 [For VegFru-292 dataset](#VegFru) <br>
 [Inference Latency](#Latency) <br>
+[Ablation Experiments on CIFAR-100](#Ablation) <br>
+[Comparison with other downsampling (EfficientFormerv2)](#Comparison) <br>
+[Getting started](#started) <br>
+[Take MobileNetv3 as an example, when using our module](#using) <br>
+[Acknowledgement](#Acknowledgement) <br>
 
 <a name="first"></a>
 ## For the CIFAR-100 dataset, using the first set of hyperparameters
@@ -134,7 +139,7 @@ ZEISS Microscopy  &nbsp; ZEISS Microscopy
 
 <br>
 
-<a name="Ablation Experiments on CIFAR-100"></a>
+<a name="Ablation"></a>
 ## Ablation Experiments on CIFAR-100
 
 | Model | orig | +Stem |  +Downsampling | ours |
@@ -146,7 +151,7 @@ ZEISS Microscopy  &nbsp; ZEISS Microscopy
 
 <br>
 
-<a name="Comparison with other downsampling (EfficientFormerv2)"></a>
+<a name="Comparison"></a>
 ## Comparison with other downsampling (EfficientFormerv2)
 
 __《Rethinking Vision Transformers for MobileNet Size and Speed》<br>__
@@ -169,7 +174,7 @@ Snap Inc. Northeastern University
 | GhostNet | 4.030M | 34.8M |  74.10% |  
 | ShuffleNet-v2 | 1.358M | 35.7M |  71.50% | 
 
-<a name="Getting started"></a>
+<a name="started"></a>
 ## Getting started
 
 
@@ -189,7 +194,7 @@ python bsconv_pytorch_train.py --data-root cifar100 --dataset cifar100 --archite
 python bsconv_pytorch_train.py --data-root cifar100 --dataset cifar100 --architecture cifar_resnet110_bsconvu --gpu-id 0 
 ```
 
-<a name="Take MobileNetv3 as an example, when using our module"></a>
+<a name="using"></a>
 ## Take MobileNetv3 as an example, when using our module.
 
 
