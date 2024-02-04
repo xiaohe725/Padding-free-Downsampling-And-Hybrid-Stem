@@ -103,27 +103,6 @@ ZEISS Microscopy  &nbsp; ZEISS Microscopy
 
 <br>
 
-<a name="VegFru"></a>
-## For VegFru-292 dataset
-
-### Orig——VegFru-292
-| Model | Parameters | FLOPs |  Accuracy |
-| :---: | :---: | :---: | :---: |   
-| MobileNetv3-large | 4.576M | 224.5M |  89.20% |  
-| Parc-MobileNet-v2 | 2.605M | 314.8M |  89.10% |  
-| GhostNet | 4.276M | 147.9M |  89.60% |  
-| ShuffleNet-v2 | 1.553M | 148.1M |  88.40% |  
-
-### Ours——VegFru-292
-| Model | Parameters | FLOPs |  Accuracy |
-| :---: | :---: | :---: | :---: |   
-| MobileNetv3-large | 4.577M | 205.7M ↓|  89.90% |  
-| Parc-MobileNet-v2 | 2.605M | 305.5M ↓|  90.00% |  
-| GhostNet | 4.276M | 136.9M ↓|  90.30% |  
-| ShuffleNet-v2 | 1.554M | 130.7M ↓|  87.70% |  
-
-<br>
-
 <a name="Latency"></a>
 ## Inference Latency
 
@@ -179,6 +158,28 @@ Snap Inc. Northeastern University
 | Parc-MobileNet-v2 | 2.348M | 73.0M |  76.60% |  
 | GhostNet | 4.030M | 34.8M |  74.10% |  
 | ShuffleNet-v2 | 1.358M | 35.7M |  71.50% | 
+
+<br>
+
+<a name="VegFru"></a>
+## For VegFru-292 dataset
+
+### Orig——VegFru-292
+| Model | Parameters | FLOPs |  Accuracy |
+| :---: | :---: | :---: | :---: |   
+| MobileNetv3-large | 4.576M | 224.5M |  89.20% |  
+| Parc-MobileNet-v2 | 2.605M | 314.8M |  89.10% |  
+| GhostNet | 4.276M | 147.9M |  89.60% |  
+| ShuffleNet-v2 | 1.553M | 148.1M |  88.40% |  
+
+### Ours——VegFru-292
+| Model | Parameters | FLOPs |  Accuracy |
+| :---: | :---: | :---: | :---: |   
+| MobileNetv3-large | 4.577M | 205.7M ↓|  89.90% |  
+| Parc-MobileNet-v2 | 2.605M | 305.5M ↓|  90.00% |  
+| GhostNet | 4.276M | 136.9M ↓|  90.30% |  
+| ShuffleNet-v2 | 1.554M | 130.7M ↓|  87.70% |  
+
 
 <a name="started"></a>
 ## Getting started
