@@ -3,14 +3,14 @@ This repository provides code for paper 《Lightweight Deep Neural Network Model
 Experiment
 ==
 
-[For the CIFAR-100 dataset, using the first set of hyperparameters](#first) <br>
-[For the CIFAR-100 dataset, using the second set of hyperparameters](#second) <br>
-[For Stanford Dogs dataset](#Dogs) <br>
-[For ImageNet dataset](#ImageNet) <br>
-[For VegFru-292 dataset](#VegFru) <br>
-[Inference Latency](#Latency) <br>
-[Ablation Experiments on CIFAR-100](#Ablation) <br>
-[Comparison with other downsampling (EfficientFormerv2)](#Comparison) <br>
+[I. For the CIFAR-100 dataset, using the first set of hyperparameters](#first) <br>
+[I. For the CIFAR-100 dataset, using the second set of hyperparameters](#second) <br>
+[II. For Stanford Dogs dataset](#Dogs) <br>
+[III. For ImageNet dataset](#ImageNet) <br>
+[IV. Inference Latency](#Latency) <br>
+[V. Ablation Experiments on CIFAR-100](#Ablation) <br>
+[VI. Comparison with other downsampling (EfficientFormerv2)](#Comparison) <br>
+[VII. For VegFru-292 dataset](#VegFru) <br>
 
 Instructions for use
 ==
