@@ -90,7 +90,7 @@ For VegFru-292 dataset
 | Model | Parameters | FLOPs |  Accuracy |
 | :---: | :---: | :---: | :---: |   
 | MobileNetv3-large | 4.576M | 224.5M |  89.20% |  
-| Parc-MobileNet-v2 | 2.605M | 314.8M |  89.1% |  
+| Parc-MobileNet-v2 | 2.605M | 314.8M |  89.10% |  
 | GhostNet | 4.276M | 147.9M |  89.60% |  
 | ShuffleNet-v2 | 1.553M | 148.1M |  88.40% |  
 
@@ -98,7 +98,7 @@ For VegFru-292 dataset
 | Model | Parameters | FLOPs |  Accuracy |
 | :---: | :---: | :---: | :---: |   
 | MobileNetv3-large | 4.577M | 205.7M ↓|  89.90% |  
-| Parc-MobileNet-v2 | 2.605M | 305.5M ↓|  90.0% |  
+| Parc-MobileNet-v2 | 2.605M | 305.5M ↓|  90.00% |  
 | GhostNet | 4.276M | 136.9M ↓|  90.30% |  
 | ShuffleNet-v2 | 1.554M | 130.7M ↓|  87.70% |  
 
