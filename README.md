@@ -2,6 +2,8 @@ This repository provides code for paper 《Lightweight Deep Neural Network Model
 
 Framework & Performance
 ==
+![framework](./framework.png)
+![performa](./performance.png)
 
 Experiment
 ==
