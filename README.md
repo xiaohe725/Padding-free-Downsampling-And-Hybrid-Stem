@@ -1,5 +1,8 @@
 This repository provides code for paper 《Lightweight Deep Neural Network Model With Padding-free Downsampling》
 
+Experiment
+==
+
 [For the CIFAR-100 dataset, using the first set of hyperparameters](#first) <br>
 [For the CIFAR-100 dataset, using the second set of hyperparameters](#second) <br>
 [For Stanford Dogs dataset](#Dogs) <br>
@@ -8,6 +11,9 @@ This repository provides code for paper 《Lightweight Deep Neural Network Model
 [Inference Latency](#Latency) <br>
 [Ablation Experiments on CIFAR-100](#Ablation) <br>
 [Comparison with other downsampling (EfficientFormerv2)](#Comparison) <br>
+
+Instructions for use
+==
 [Getting started](#started) <br>
 [Take MobileNetv3 as an example, when using our module](#using) <br>
 [Acknowledgement](#Acknowledgement) <br>
