@@ -1,8 +1,13 @@
 This repository provides code for paper 《Lightweight Deep Neural Network Model With Padding-free Downsampling》
 
-[Jump to My Heading](#my-heading)
+[For the CIFAR-100 dataset, using the first set of hyperparameters](#first) <br>
+[For the CIFAR-100 dataset, using the second set of hyperparameters](#second) <br>
+[For Stanford Dogs dataset](#Dogs) <br>
+[For ImageNet dataset](#ImageNet) <br>
+[For VegFru-292 dataset](#VegFru) <br>
+[Inference Latency](#Latency) <br>
 
-<a name="my-heading"></a>
+<a name="first"></a>
 ## For the CIFAR-100 dataset, using the first set of hyperparameters
 
 The first set of hyperparameters follows the settings of Haase et al. 
@@ -34,6 +39,7 @@ ZEISS Microscopy  &nbsp; ZEISS Microscopy
 
 <br>
 
+<a name="second"></a>
 ## For the CIFAR-100 dataset, using the second set of hyperparameters
 
 ### Orig——CIFAR-100
@@ -54,8 +60,8 @@ ZEISS Microscopy  &nbsp; ZEISS Microscopy
 
 <br>
 
+<a name="Dogs"></a>
 ## For Stanford Dogs dataset
-
 
 ### Orig——Stanford Dogs
 | Model | Parameters | FLOPs |  Accuracy |
@@ -71,6 +77,7 @@ ZEISS Microscopy  &nbsp; ZEISS Microscopy
 
 <br>
 
+<a name="ImageNet"></a>
 ## For ImageNet dataset
 
 ### Orig——ImageNet
@@ -85,6 +92,7 @@ ZEISS Microscopy  &nbsp; ZEISS Microscopy
 
 <br>
 
+<a name="VegFru"></a>
 ## For VegFru-292 dataset
 
 ### Orig——VegFru-292
@@ -105,6 +113,7 @@ ZEISS Microscopy  &nbsp; ZEISS Microscopy
 
 <br>
 
+<a name="Latency"></a>
 ## Inference Latency
 
 ### Orig——Latency
@@ -125,6 +134,7 @@ ZEISS Microscopy  &nbsp; ZEISS Microscopy
 
 <br>
 
+<a name="Ablation Experiments on CIFAR-100"></a>
 ## Ablation Experiments on CIFAR-100
 
 | Model | orig | +Stem |  +Downsampling | ours |
@@ -136,6 +146,7 @@ ZEISS Microscopy  &nbsp; ZEISS Microscopy
 
 <br>
 
+<a name="Comparison with other downsampling (EfficientFormerv2)"></a>
 ## Comparison with other downsampling (EfficientFormerv2)
 
 __《Rethinking Vision Transformers for MobileNet Size and Speed》<br>__
@@ -158,6 +169,7 @@ Snap Inc. Northeastern University
 | GhostNet | 4.030M | 34.8M |  74.10% |  
 | ShuffleNet-v2 | 1.358M | 35.7M |  71.50% | 
 
+<a name="Getting started"></a>
 ## Getting started
 
 
@@ -176,6 +188,8 @@ python bsconv_pytorch_train.py --data-root cifar100 --dataset cifar100 --archite
 python bsconv_pytorch_train.py --data-root cifar100 --dataset cifar100 --architecture cifar_resnet20 --gpu-id 0
 python bsconv_pytorch_train.py --data-root cifar100 --dataset cifar100 --architecture cifar_resnet110_bsconvu --gpu-id 0 
 ```
+
+<a name="Take MobileNetv3 as an example, when using our module"></a>
 ## Take MobileNetv3 as an example, when using our module.
 
 
@@ -218,6 +232,7 @@ self.backbone.add_module("init_conv", StemBlock(in_channels, init_conv_channels)
              activation=activation)
 ```
 
+<a name="Acknowledgement"></a>
 ## Acknowledgement
 
 Thanks to BSConv and EfficientFormerv2. Our code is based on the [BSConv library](https://github.com/zeiss-microscopy/BSConv) and [EfficientFormerv2 library](https://github.com/snap-research/EfficientFormer).
